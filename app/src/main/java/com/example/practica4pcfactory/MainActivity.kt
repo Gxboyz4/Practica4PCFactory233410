@@ -38,33 +38,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun cargarPeliculas(){
-        peliculas.add(
-            Pelicula("Bones",R.drawable.bones,R.drawable.bonesheader,"Descripción de ejemplo", arrayListOf<Cliente>())
-        )
-        peliculas.add(
-            Pelicula("Dr. House",R.drawable.drhouse,R.drawable.househeader,"Descripción de ejemplo", arrayListOf<Cliente>()))
-        peliculas.add(
-            Pelicula("Big Hero 6",R.drawable.bighero6,R.drawable.headerbighero6,"Descripción de ejemplo", arrayListOf<Cliente>()))
-        peliculas.add(
-            Pelicula("Dr. Who",R.drawable.drwho,R.drawable.drwhoheader,"Descripción de ejemplo", arrayListOf<Cliente>()))
-        peliculas.add(
-            Pelicula("Friends",R.drawable.friends,R.drawable.friendsheader,"Descripción de ejemplo", arrayListOf<Cliente>()))
-        peliculas.add(
-            Pelicula("Inception",R.drawable.inception,R.drawable.inceptionheader,"Descripción de ejemplo", arrayListOf<Cliente>()))
-        peliculas.add(
-            Pelicula("Leap Year",R.drawable.leapyear,R.drawable.leapyearheader,"", arrayListOf<Cliente>()))
-        peliculas.add(
-            Pelicula("Toy Story",R.drawable.toystory,R.drawable.toystoryheader,"Descripción de ejemplo", arrayListOf<Cliente>()))
-        peliculas.add(
-            Pelicula("Smallville",R.drawable.smallville,R.drawable.smallvilleheader,"Descripción de ejemplo", arrayListOf<Cliente>()))
+        peliculas.add(Pelicula("Toy Story",R.drawable.toystory,R.drawable.toystoryheader,"Descripción de ejemplo", arrayListOf<Cliente>()))
+        peliculas.add(Pelicula("Big Hero 6",R.drawable.bighero6,R.drawable.headerbighero6,"Descripción de ejemplo", arrayListOf<Cliente>()))
+        peliculas.add(Pelicula("Bones",R.drawable.bones,R.drawable.bonesheader,"Descripción de ejemplo", arrayListOf<Cliente>()))
+        peliculas.add(Pelicula("Dr. House",R.drawable.drhouse,R.drawable.househeader,"Descripción de ejemplo", arrayListOf<Cliente>()))
+        peliculas.add(Pelicula("Dr. Who",R.drawable.drwho,R.drawable.drwhoheader,"Descripción de ejemplo", arrayListOf<Cliente>()))
+        peliculas.add(Pelicula("Friends",R.drawable.friends,R.drawable.friendsheader,"Descripción de ejemplo", arrayListOf<Cliente>()))
+        peliculas.add(Pelicula("Inception",R.drawable.inception,R.drawable.inceptionheader,"Descripción de ejemplo", arrayListOf<Cliente>()))
+        peliculas.add(Pelicula("Leap Year",R.drawable.leapyear,R.drawable.leapyearheader,"", arrayListOf<Cliente>()))
+        peliculas.add(Pelicula("Smallville",R.drawable.smallville,R.drawable.smallvilleheader,"Descripción de ejemplo", arrayListOf<Cliente>()))
 
     }
 }
 class PeliculaAdapter: BaseAdapter{
-
     var peliculas = ArrayList<Pelicula>()
     var context: Context? = null
-
     constructor(context: Context,peliculas: ArrayList<Pelicula>){
         this.context = context
         this.peliculas=  peliculas
