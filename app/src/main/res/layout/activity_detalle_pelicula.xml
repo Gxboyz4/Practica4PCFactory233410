@@ -73,15 +73,7 @@
         android:textColor="@color/yellow"
         android:textSize="14sp" />
 
-    <Button
-        android:id="@+id/back"
-        android:layout_width="237dp"
-        android:layout_height="48dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:background="@color/yellow"
-        android:text="Volver"
-        android:textColor="@color/black_background" />
+    
 
 
 </LinearLayout>

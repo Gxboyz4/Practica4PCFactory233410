@@ -19,7 +19,7 @@ class DetallePelicula : AppCompatActivity() {
             ns = bundle.getInt("numberSeats")
             title = bundle.getString("titulo")!!
             binding.ivPeliculaImagen.setImageResource(bundle.getInt("header"))
-            binding.tvNombrePelicula.setText(bundle.getString("nombre"))
+            binding.tvNombrePelicula.setText(title)
             binding.tvPeliculaDesc.setText(bundle.getString("sinopsis"))
             binding.seatLeft.setText("$ns seats avaible")
             id = bundle.getInt("pos")

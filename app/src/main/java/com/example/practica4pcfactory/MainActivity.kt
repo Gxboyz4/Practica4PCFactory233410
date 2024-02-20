@@ -47,7 +47,6 @@ class MainActivity : AppCompatActivity() {
         peliculas.add(Pelicula("Inception",R.drawable.inception,R.drawable.inceptionheader,"Descripción de ejemplo", arrayListOf<Cliente>()))
         peliculas.add(Pelicula("Leap Year",R.drawable.leapyear,R.drawable.leapyearheader,"", arrayListOf<Cliente>()))
         peliculas.add(Pelicula("Smallville",R.drawable.smallville,R.drawable.smallvilleheader,"Descripción de ejemplo", arrayListOf<Cliente>()))
-
     }
 }
 class PeliculaAdapter: BaseAdapter{
