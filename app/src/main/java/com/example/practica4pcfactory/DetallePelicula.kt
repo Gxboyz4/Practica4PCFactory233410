@@ -36,9 +36,6 @@ class DetallePelicula : AppCompatActivity() {
                 this!!.startActivity(intent)
             }
         }
-        binding.back.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java).apply {}
-            this!!.startActivity(intent)
-        }
+
     }
 }
